@@ -1,7 +1,6 @@
 # include "PhoneBook.hpp"
 # include "Contact.hpp"
 
-//Créer la cellule de contact
 std::string format_cell(std::string str)
 {
 	int len;
@@ -32,7 +31,6 @@ std::string format_cell(std::string str)
 	return (result);
 }
 
-// Affiche seulement un résumé du contact
 void PhoneBook::display_contact_summary(int index)
 {
 	std::cout
@@ -44,7 +42,6 @@ void PhoneBook::display_contact_summary(int index)
 	std::cout << "|----------|----------|----------|----------|" << std::endl;
 }
 
-// Affiche toutes les infos du contact
 void PhoneBook::display_contact_full(int index)
 {
 	std::cout << "Index:    " << index << "\n";
