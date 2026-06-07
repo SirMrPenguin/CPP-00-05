@@ -1,0 +1,28 @@
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
+# include <iostream>
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+# define RED	"\033[0;31m"
+# define GREEN	"\033[0;32m"
+# define END		"\033[0m"
+
+class Contact {
+	private:
+		std::string name;
+		std::string surname;
+		std::string nickname;
+		std::string phone;
+		std::string secret;
+	public:
+		void set_contact(void);
+		std::string get_value(std::string field);
+};
+
+std::string promptNonEmpty(const std::string& label);
+void check_numeric(bool *isNumeric, std::string tmp);
+void check_alpha(bool *isAlpha, std::string tmp);
+int	is_space(std::string input);
+
+#endif
